@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+  <title>My perfect quiz game</title>
+  
+
+  <style>
+ 
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body style="user-select:none;">
+  <header>
+    <h1>Tricky</h1>
+  </header>
+  <div id="gameboard">
+  <section id="mainMenu" style="display: block;">
+    <div class="menucoll" onclick="play()" >
+      Play
+    </div>
+    <div class="menucoll">
+      Word Almanac
+    </div>
+    <div class="menucoll">
+      Leaderboards
+    </div>
+    <div class="menucoll">
+      Settings
+    </div>
+  </section>
+
+<section id="difficulty" style="display:none;">
+  <div class="menucoll" onclick="startgame('novice')">
+    Novice
+  </div>
+<div class="menucoll" onclick="startgame('average')">
+    Average
+  </div>
+<div class="menucoll" onclick="startgame('veteran')">
+    Veteran
+  </div>
+  
+
+</section>
+
+<section id="ingame">
+
+</section>
+
+<div id="nextbutton" style="display: none;" class="nextbutton">Next</div>
+<div id="qn" style="display:none;"></div>
+
+<script src="loadQuestion.js"></script>
+<script src="loadScore.js"></script>
+<script src="index.js"></script>
+
+  
+  
+</body>
+</html>

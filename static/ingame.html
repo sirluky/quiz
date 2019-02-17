@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .qArea{
+      /* max-height: 100px; */
+    }
+    .qArea #qword{
+      font-size: 60px;
+text-align: center;
+margin: 40px;
+margin-top: 50px;
+
+    }
+    .score{
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+    }
+      .nscore{
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      /* text-decoration: bold; */
+      font-weight: bold;
+      }
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tricky</h1>
+    
+  </header>
+  <section id="mainMenu" style="display: block;"></section>
+  <section>
+    <div class="qArea">
+<p class="score">score</p>
+<p class="nscore">1150</p>
+
+      <p id="qword">bread</p>
+      
+
+    
+    </div>
+   <div>
+      <div class="menucoll" id="qanswer1">
+        chleb
+      </div>
+      <div class="menucoll" id="qanswer2">
+        brambor
+      </div>
+   </div>
+   
+
+  </section>
+  <script>
+    function play() {
+      //hide main menu
+      document.getElementById('mainMenu').style.display = "none";
+
+    }
+  </script>
+
+
+</body>
+
+</html>

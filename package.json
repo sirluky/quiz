@@ -1,0 +1,22 @@
+{
+  "name": "languages-quiz",
+  "version": "1.0.0",
+  "description": "My first \"bigger\" node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quiz",
+    "languages",
+    "easy",
+    "learning"
+  ],
+  "author": "Lukas Kovar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.3.1",
+    "socket.io": "^2.1.1"
+  }
+}
