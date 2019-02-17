@@ -3,15 +3,15 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://wtf:itsaprank12@ds263109.mlab.com:63109/myquiz');
+// var mongoose = require('mongoose');
+// mongoose.connect('mongodb://wtf:itsaprank12@ds263109.mlab.com:63109/myquiz');
 
-var QinDBscheme = new mongoose.Schema({
-  c: String,
-  n: String
-});
+// var QinDBscheme = new mongoose.Schema({
+//   c: String,
+//   n: String
+// });
 
-var QinDB = mongoose.model('question', QinDBscheme);
+// var QinDB = mongoose.model('question', QinDBscheme);
 
 /*
 
@@ -261,17 +261,17 @@ let slovicka = [{
 // }
 // ];
 
-for (let i = 0; i < slovicka.length; i++) {
+// for (let i = 0; i < slovicka.length; i++) {
 
-  QinDB({
-    c: slovicka[i].c,
-    n: slovicka[i].n
-  }).save(function (err) {
-    if (err) throw err;
-    console.log('question saved');
-  });
+//   QinDB({
+//     c: slovicka[i].c,
+//     n: slovicka[i].n
+//   }).save(function (err) {
+//     if (err) throw err;
+//     console.log('question saved');
+//   });
 
-}
+// }
 
 
 let privatePlayersData = [];
@@ -423,8 +423,8 @@ function GetaQuestion(){
    }
 }
 
-setTimeout(e => {
-  http.listen(8080, function () {
-    console.log('listening on *:80');
+// setTimeout(e => {
+  http.listen(3000, function () {
+    console.log('listening on *:3000');
   });
-}, 100);
+// }, 100);
