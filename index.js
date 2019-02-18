@@ -425,6 +425,6 @@ function GetaQuestion(){
 
 // setTimeout(e => {
   http.listen(process.env.PORT || 1234, function () {
-    console.log('listening on *:' + process.env.PORT || 1234);
+    console.log('listening on *:' + (process.env.PORT || 1234));
   });
 // }, 100);
